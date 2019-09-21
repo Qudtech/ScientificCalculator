@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/Layout.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="">
+            <div class="screen">
+                <form name="Calculator">
+                    <div id="scn" readonly="true">
+                        <div><span id="expr"></span></div>
+
+                        <div><span id="expr_answer"></span></div>
+                    </div>
+                </form>
+                <div class="btns">
+                    <p>
+                        <input type="button" onclick="num(value)" value="SIN" class="button black">
+                        <input type="button" onclick="num(value)" value="COS" class="button black">
+                        <input type="button" onclick="num(value)" value="TAN" class="button black">
+                        <input type="button" onclick="num(value)" value="(-)" class="button black">
+                        <input id='of' type="button" onclick="off()" value="ON" class="button black red">
+                    </p>
+                    <p>
+                        <input id='ss' type="button" onclick="num(value)" value="&radic;" class="button black">
+                        <button id="SQR" onclick="num(value)" value="SQR" class="button black">y<sup>2</sup></button>
+                        <input type="button" onclick="num(value)" value="^" class="button black">
+                        <input type="button" onclick="num(value)" value="LOG" class="button black">
+                        <input type="button" onclick="num(value)" value="IN" class="button black">
+                    </p>
+                    <p>
+                        <input type="button" onclick="clr()" value="CLR" class="button black">
+                        <input type="button" onclick="num(value)" value="(" class="button black">
+                        <input type="button" onclick="num(value)" value=")" class="button black">
+                        <input type="button" onclick="num(value)" value="M+" class="button black">
+                        <input type="button" onclick="num(value)" value="MOD" class="button black">
+                    </p>
+                    <p>
+                        <input type="button" onclick="num(value)" value="7" class="button gray">
+                        <input type="button" onclick="num(value)" value="8" class="button gray">
+                        <input type="button" onclick="num(value)" value="9" class="button gray">
+                        <input type="button" onclick="del()" value="DEL" class="button red">
+                        <input type="button" onclick="ac()" value="AC" class="button red">
+                    </p>
+                    <p>
+                        <input type="button" onclick="num(value)" value="4" class="button gray">
+                        <input type="button" onclick="num(value)" value="5" class="button gray">
+                        <input type="button" onclick="num(value)" value="6" class="button gray">
+                        <input type="button" onclick="num(value)" value="*" class="button gray">
+                        <input type="button" onclick="num(value)" value="/" class="button gray">
+                    </p>
+                    <p>
+                        <input type="button" onclick="num(value)" value="1" class="button gray">
+                        <input type="button" onclick="num(value)" value="2" class="button gray">
+                        <input type="button" onclick="num(value)" value="3" class="button gray">
+                        <input type="button" onclick="num(value)" value="+" class="button gray">
+                        <input type="button" onclick="num(value)" value="-" class="button gray">
+                    </p>
+                    <p>
+                        <input type="button" onclick="num(value)" value="0" class="button gray">
+                        <input type="button" onclick="num(value)" value="." class="button gray">
+                        <input type="button" onclick="num(value)" value="EXP" class="button gray">
+                        <input type="button" onclick="num(value)" value="PI" class="button gray">
+                        <input type="button" onclick="ans()" value="=" class="button gray">
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+
+</html>
